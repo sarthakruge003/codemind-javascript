@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div id="overview">
+            <h1>HTML & Javascript are crusial technologies</h1>
+            <p>The Web would not work without them...</p>
+
+        </div>
+        <div id="advantages">
+            <ul>
+                <li>Flexible</li>
+                <li id="Available">Available</li>
+                <li>Magical</li>
+            </ul>
+
+        </div>
+    
+    </main>
+    <script>
+        const h1 = document.querySelector("h1");
+        console.log(h1.innerText);
+
+        const secondAdvantage = document.querySelector("#Available");
+        console.log(secondAdvantage.innerText);
+
+        const advDiv = document.querySelectorAll("#advantages");
+        for (const element of advDiv) {
+            console.log(element.innerText);  
+        }
+
+
+
+     </script>
+</body>
+</html>
